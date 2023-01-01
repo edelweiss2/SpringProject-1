@@ -13,10 +13,17 @@ public class User {
 	private LocalDate regDate;
 	private LocalDate delDate;
 	
+	
+	public User(String pwd, String uname, String email, String addr, String phoneNum) {
+		this.pwd = pwd;
+		this.uname = uname;
+		this.email = email;
+		this.addr = addr;
+		this.phoneNum = phoneNum;
+	}
 	public User() {}
 	public User(String uid, String pwd, String uname, String email, String addr, String phoneNum, int isDeleted,
 			LocalDate regDate, LocalDate delDate) {
-		super();
 		this.uid = uid;
 		this.pwd = pwd;
 		this.uname = uname;
@@ -28,7 +35,6 @@ public class User {
 		this.delDate = delDate;
 	}
 	public User(String uid, String pwd, String uname, String email, String addr, String phoneNum) {
-		super();
 		this.uid = uid;
 		this.pwd = pwd;
 		this.uname = uname;
@@ -37,6 +43,17 @@ public class User {
 		this.phoneNum = phoneNum;
 	}
 	
+	public User(String uid, String uname, String email) {
+		this.uid = uid;
+		this.uname = uname;
+		this.email = email;
+	}
+	public User(String uid, String pwd, String uname, String email) {
+		this.uid = uid;
+		this.pwd = pwd;
+		this.uname = uname;
+		this.email = email;
+	}
 	public String getUid() {
 		return uid;
 	}

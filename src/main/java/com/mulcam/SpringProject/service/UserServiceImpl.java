@@ -80,4 +80,18 @@ public class UserServiceImpl implements UserService{
 		return user;
 	}
 
+	@Override
+	public void updateUser(User u) {
+		String cryptedPwd = BCrypt.hashpw(u.getPwd(), BCrypt.gensalt());
+		u.setPwd(cryptedPwd);
+		userDao.updateUser(u);
+		
+	}
+
+	@Override
+	public void deleteUser(String uid) {
+		userDao.deleteUser(uid);
+		
+	}
+
 }

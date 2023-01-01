@@ -76,7 +76,7 @@ public class UserController {
 		String email = req.getParameter("email").strip();
 		String addr = req.getParameter("addr").strip();
 		String phoneNum = req.getParameter("phoneNum").strip();
-		System.out.println("들어왔는지 확인용");
+		
 		
 		if(pwd.equals(pwd2)) {
 			User u = new User(uid,pwd,uname,email,addr,phoneNum);
@@ -101,11 +101,45 @@ public class UserController {
 		return "user/update";
 	}
 	
+	@PostMapping("/update")
+	public String update(HttpServletRequest req, HttpSession session, Model model) {
+		String uid = req.getParameter("uid").strip();
+		String pwd = req.getParameter("pwd").strip();
+		String pwd2 = req.getParameter("pwd2").strip();
+		String addr = req.getParameter("addr").strip();
+		String phoneNum = req.getParameter("phoneNum").strip();
+		String uname = req.getParameter("uname").strip();
+		String email = req.getParameter("email").strip();
+		
+		if (pwd == null || pwd.equals("")) {	// 패스워드를 입력하지 않은 경우
+			model.addAttribute("msg", "패스워드를 입력하지 않았습니다.");
+			model.addAttribute("url", "/user/update/" + uid);
+			return "user/alertMsg";			
+		} else if (pwd.equals(pwd2)) {			// 패스워드가 올바른 경우
+			User u = new User(pwd, uname, email, addr, phoneNum);
+			service.updateUser(u);
+			return "redirect:/user/list?page=" + session.getAttribute("currentUserPage");
+		} else {								// 패스워드를 잘못 입력한 경우
+			model.addAttribute("msg", "패스워드 입력이 잘못되었습니다.");
+			model.addAttribute("url", "/user/update/" + uid);
+			return "user/alertMsg";
+		}
+		
+	}
+		
 	
 	@GetMapping("/delete/{uid}")
 	public String delete(@PathVariable String uid, Model model) {
 		model.addAttribute("uid", uid);
 		return "user/delete";
+	}
+	
+	@GetMapping("/deleteConfirm") 
+	public String deleteConfirm	(HttpServletRequest req, HttpSession session) {
+		String uid = req.getParameter("uid");
+		service.deleteUser(uid);
+		
+		return "redirect:/user/list?page=" + session.getAttribute("currentUserPage");
 	}
 	
 

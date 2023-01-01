@@ -1,5 +1,6 @@
 package com.mulcam.SpringProject.controller;
 
+import java.io.File;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -212,24 +213,14 @@ public class BoardController {
 		model.addAttribute("bid", 30);
 		return "board/test";
 	}
-	
-	// TODO: 이미지 파일 업로드 
-	@PostMapping("/upload")
-	public String upload(@RequestParam("uploadfile") MultipartFile uploadfile, Model model) {
-		
-		List<Board> list = new ArrayList<>();
-		
-		
-		return null;
-	}
-		
+	// 게시물 삭제
 	@GetMapping("/delete")
 	public String deleteBoard(HttpServletRequest req ) {
 		int bid = Integer.parseInt(req.getParameter("bid"));
 		service.deleteBoard(bid);
 		return "redirect:/board/list";
-	
-	
-	
 	}
+	
+
+	
 }

@@ -25,6 +25,10 @@ public interface UserService {
 	List<User> getList();
 
 	User getUser(String uid);
+
+	void updateUser(User u);
+
+	void deleteUser(String uid);
 	
 
 }
