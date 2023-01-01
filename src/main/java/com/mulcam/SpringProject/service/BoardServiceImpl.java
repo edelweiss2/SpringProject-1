@@ -115,4 +115,10 @@ public class BoardServiceImpl implements BoardService {
 		replyDao.deleteReply(rid);
 	}
 
+	@Override
+	public void deleteBoard(int bid) {
+		boardDao.deleteBoard(bid);
+		
+	}
+
 }

@@ -222,8 +222,14 @@ public class BoardController {
 		
 		return null;
 	}
+		
+	@GetMapping("/delete")
+	public String deleteBoard(HttpServletRequest req ) {
+		int bid = Integer.parseInt(req.getParameter("bid"));
+		service.deleteBoard(bid);
+		return "redirect:/board/list";
 	
 	
 	
-	
+	}
 }

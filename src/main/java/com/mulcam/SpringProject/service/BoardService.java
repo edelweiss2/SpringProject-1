@@ -39,4 +39,6 @@ public interface BoardService {
 
 	void deleteReply(int rid);
 
+	void deleteBoard(int bid);
+
 }
