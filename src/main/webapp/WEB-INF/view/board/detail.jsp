@@ -6,7 +6,7 @@
       <html lang="ko">
 
       <head>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      
         <%@ include file="../common/heading.jsp" %>
           <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet">
           <script>
