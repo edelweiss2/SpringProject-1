@@ -1,0 +1,42 @@
+[33m52e6bd5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m merge test
+[33m6afa98c[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m user update
+[33m0eee793[m board delete
+[33m3f2642f[m Merge pull request #13 from rnaqpddl123/jjy
+[33m35fa787[m 댓글 수정 삭제 기능추가, like,view,replycount들 dao 통합
+[33m6810185[m Merge pull request #12 from rnaqpddl123/jjy
+[33mc0e7e89[m 업데이트,삭제화면추가
+[33m218ab87[m Merge pull request #11 from rnaqpddl123/jjy
+[33m4ec8edb[m 리플 기능 추가
+[33m77671c3[m Merge pull request #10 from rnaqpddl123/jjy
+[33mcdbcfbf[m 찜버튼, 목록 추가
+[33mbf9877d[m Merge pull request #9 from rnaqpddl123/jjy
+[33m572a22b[m Merge branch 'master' of https://github.com/rnaqpddl123/SpringProject into jjy
+[33m7a87f3b[m 관심목록 페이지 추가
+[33mdec2b45[m 관심목록 페이지 추가
+[33m8658ad4[m Merge pull request #8 from rnaqpddl123/jjy
+[33m55257e4[m Merge branch 'master' into jjy
+[33m98b6836[m 보드 리스트 수정
+[33m1f68d37[m[33m ([m[1;31mupstream/jian[m[33m)[m add main.jsp(null)
+[33mcb2ce48[m Merge branch 'jian'
+[33m545aa96[m Merge pull request #7 from rnaqpddl123/jjy
+[33m2b9b4b2[m 기본 페이지
+[33m1a362b1[m Merge branch 'master' into jian
+[33m270cf08[m Merge branch 'jjy' of https://github.com/rnaqpddl123/SpringProject into jjy
+[33m39adc85[m Delete 정주영 branch테스트.txt
+[33mbd675d7[m s
+[33mab7484d[m Merge pull request #6 from rnaqpddl123/jjy
+[33mab8165f[m Merge branch 'master' into jjy
+[33md7f076f[m 프로젝트 틀
+[33m000c4ce[m Revert "branch test"
+[33mbd080d5[m Merge pull request #4 from rnaqpddl123/jian
+[33md20c780[m branch test
+[33md6f8e02[m Merge pull request #3 from rnaqpddl123/master
+[33m14c7da2[m Merge pull request #2 from rnaqpddl123/jian
+[33me369810[m branch test
+[33m93fb767[m test
+[33m7b5a3ca[m Delete 새로만듬.txt
+[33m21c82aa[m Merge pull request #1 from rnaqpddl123/jjy
+[33ma547cfd[m test
+[33mc48a61c[m .gitignore
+[33m0e17ec9[m README
+[33m560237d[m first commit
