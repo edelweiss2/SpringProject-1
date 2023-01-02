@@ -43,6 +43,7 @@ public class User {
 		this.phoneNum = phoneNum;
 	}
 	
+
 	public User(String uid, String uname, String email) {
 		this.uid = uid;
 		this.uname = uname;
@@ -54,6 +55,7 @@ public class User {
 		this.uname = uname;
 		this.email = email;
 	}
+
 	public String getUid() {
 		return uid;
 	}

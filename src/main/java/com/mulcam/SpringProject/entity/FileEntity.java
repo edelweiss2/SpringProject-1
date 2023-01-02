@@ -4,11 +4,14 @@ public class FileEntity {
 	private String fileName;
 	private String contentType;
 	
-	public FileEntity() {}
+
+	public FileEntity() { }
+
 	public FileEntity(String fileName, String contentType) {
 		this.fileName = fileName;
 		this.contentType = contentType;
 	}
+
 	
 	public String getFileName() {
 		return fileName;
@@ -26,9 +29,12 @@ public class FileEntity {
 		this.contentType = contentType;
 	}
 
+
 	@Override
 	public String toString() {
 		return "FileEntity [fileName=" + fileName + ", contentType=" + contentType + "]";
 	}
+
+	
 	
 }
